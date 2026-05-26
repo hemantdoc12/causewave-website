@@ -13,14 +13,31 @@ export default function Navbar() {
       <div className="max-w-screen-2xl mx-auto px-6 md:px-8 flex items-center justify-between h-[76px] md:h-20">
         <div className="flex items-center gap-x-4">
           <Link href="/" className="flex items-center">
-            <div className="relative h-[52px] w-[160px] md:h-[58px] md:w-[180px] flex items-center">
+            <div className="relative h-[48px] w-[150px] md:h-[56px] md:w-[170px] flex items-center">
               <Image 
                 src="/logo_1.png" 
                 alt="Causewave Innovations LLP" 
-                width={180} 
-                height={58}
+                width={170} 
+                height={56}
                 className="object-contain"
                 priority
+                onError={(e) => {
+                  // Fallback to text logo if image fails
+                  const target = e.target as HTMLImageElement;
+                  target.style.display = 'none';
+                  const fallback = document.createElement('div');
+                  fallback.className = 'flex items-center gap-x-3';
+                  fallback.innerHTML = `
+                    <div class="w-9 h-9 bg-[#0F766E] rounded-2xl flex items-center justify-center">
+                      <span class="text-white text-2xl font-bold tracking-tighter">C</span>
+                    </div>
+                    <div>
+                      <div class="font-semibold text-xl tracking-tight text-[#0F172A]">Causewave</div>
+                      <div class="text-[9px] text-[#64748B] -mt-1">INNOVATIONS LLP</div>
+                    </div>
+                  `;
+                  target.parentNode?.appendChild(fallback);
+                }}
               />
             </div>
           </Link>
@@ -43,9 +60,9 @@ export default function Navbar() {
 
           <button 
             onClick={() => setIsOpen(!isOpen)} 
-            className="md:hidden w-11 h-11 flex items-center justify-center"
+            className="md:hidden w-12 h-12 flex items-center justify-center text-[#0F766E] hover:bg-gray-100 rounded-xl transition"
           >
-            {isOpen ? <X size={22} /> : <Menu size={22} />}
+            {isOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
       </div>
@@ -53,11 +70,11 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden glass border-t px-8 py-8">
-          <div className="flex flex-col gap-y-6 text-lg">
-            <Link href="#services" onClick={() => setIsOpen(false)}>Services</Link>
-            <Link href="#impact" onClick={() => setIsOpen(false)}>Impact</Link>
-            <Link href="#about" onClick={() => setIsOpen(false)}>About</Link>
-            <Link href="#contact" onClick={() => setIsOpen(false)}>Contact</Link>
+          <div className="flex flex-col gap-y-6 text-lg font-medium">
+            <Link href="#services" onClick={() => setIsOpen(false)} className="py-1">Services</Link>
+            <Link href="#impact" onClick={() => setIsOpen(false)} className="py-1">Impact</Link>
+            <Link href="#about" onClick={() => setIsOpen(false)} className="py-1">About</Link>
+            <Link href="#contact" onClick={() => setIsOpen(false)} className="py-1">Contact</Link>
           </div>
         </div>
       )}
