@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,15 +12,18 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/80">
       <div className="max-w-screen-2xl mx-auto px-8 flex items-center justify-between h-20">
         <div className="flex items-center gap-x-4">
-          <div className="flex items-center gap-x-3">
-            <div className="w-10 h-10 bg-[#0F766E] rounded-2xl flex items-center justify-center">
-              <span className="text-white text-3xl font-bold tracking-tighter">C</span>
+          <Link href="/" className="flex items-center gap-x-3">
+            <div className="relative w-[140px] h-[52px] flex items-center">
+              <Image 
+                src="/logo_1.png" 
+                alt="Causewave Innovations LLP" 
+                width={140} 
+                height={52}
+                className="object-contain"
+                priority
+              />
             </div>
-            <div>
-              <div className="font-semibold text-2xl tracking-tight">Causewave</div>
-              <div className="text-[10px] text-[#64748B] -mt-1">INNOVATIONS LLP</div>
-            </div>
-          </div>
+          </Link>
         </div>
 
         <div className="hidden md:flex items-center gap-x-10 text-sm font-medium">
