@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0F766E;
+  --accent: #F97316;
+}
+
+body {
+  color: #0F172A;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+}
+
+.service-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-16px) scale(1.02);
+  box-shadow: 0 30px 70px -15px rgb(15 118 110 / 0.15);
+}

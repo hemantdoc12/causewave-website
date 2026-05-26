@@ -3,333 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Causewave Innovations LLP - CSR Strategy, Implementation & Impact Reporting</title>
-    <meta name="description" content="CSR consulting for compliant, measurable, community-rooted impact across health, education, livelihoods, sustainability, and development programs.">
-    <link rel="icon" href="logo_2.png">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Causewave Innovations | CSR Strategy & Impact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap');
+        :root {
+            --primary: #0F766E;
+            --accent: #F97316;
+        }
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .heading { font-family: 'Playfair Display', Georgia, serif; }
+        .section-header { font-size: clamp(2.25rem, 5vw, 3.5rem); line-height: 1.05; }
+        .glass { background: rgba(255,255,255,0.95); backdrop-filter: blur(20px); }
+        .service-card { transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1); }
+        .service-card:hover { transform: translateY(-16px) scale(1.02); box-shadow: 0 25px 60px -15px rgb(15 118 110 / 0.2); }
+    </style>
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <div class="logo-placeholder">
-                    <img src="logo_1.png" alt="Causewave Innovations LLP" class="logo-image">
+<body class="bg-[#F8FAFC] text-[#0F172A]">
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass border-b border-white/80">
+        <div class="max-w-screen-2xl mx-auto px-8 flex items-center justify-between h-20">
+            <div class="flex items-center gap-x-4">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-[#0F766E] rounded-2xl flex items-center justify-center">
+                        <span class="text-white text-3xl font-bold tracking-tighter">C</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-2xl tracking-tight">Causewave</div>
+                        <div class="text-[10px] text-[#64748B] -mt-1">INNOVATIONS LLP</div>
+                    </div>
                 </div>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="founder.html">Leadership</a></li>
-                <li><a href="insights.html">Insights</a></li>
-                <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="hidden md:flex items-center gap-x-10 text-sm font-medium">
+                <a href="#services" class="hover:text-[#0F766E] transition-colors">Services</a>
+                <a href="#impact" class="hover:text-[#0F766E] transition-colors">Impact</a>
+                <a href="#about" class="hover:text-[#0F766E] transition-colors">About</a>
+                <a href="#contact" class="hover:text-[#0F766E] transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-x-4">
+                <a href="#contact" class="px-6 py-3 bg-[#0F766E] hover:bg-[#134E4B] text-white rounded-2xl font-semibold text-sm transition-all flex items-center gap-x-2">
+                    <span>Start Project</span>
+                </a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Build CSR programs <span class="mobile-break"></span>that are <span class="mobile-break"></span><span class="highlight">compliant,<span class="mobile-break"></span> measurable,<span class="mobile-break"></span> and trusted</span><span class="mobile-break"></span> by communities.
+    <!-- Hero -->
+    <section class="min-h-[100dvh] flex items-center pt-20 bg-[#0F172A] text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#ffffff10_1px,transparent_1px)] bg-[length:5px_5px]"></div>
+        
+        <div class="max-w-screen-2xl mx-auto px-8 relative z-10">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-white/20 mb-8 text-sm">
+                    <div class="w-2 h-2 bg-[#F97316] rounded-full animate-pulse"></div>
+                    <span class="tracking-[2px] font-medium">TRUSTED BY 50+ LEADING COMPANIES</span>
+                </div>
+
+                <h1 class="text-[72px] md:text-[92px] leading-[0.9] font-bold tracking-tighter mb-8 heading">
+                    CSR that<br>actually<br>changes lives.
                 </h1>
-                <p class="hero-subtitle">
-                    Causewave helps companies plan, implement, monitor, and communicate CSR initiatives across health, education, livelihoods, sustainability, and community development, backed by field-tested public-health leadership.
+
+                <p class="max-w-2xl text-2xl text-white/80 mb-12">
+                    We help companies build compliant, measurable, and deeply trusted CSR programs across health, education, livelihoods, and sustainability.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Plan Your CSR Program</a>
-                    <a href="insights/chitta-express-innovation.html" class="btn btn-secondary">View Impact Work</a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Companies Transformed</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">₹10Cr+</span>
-                        <span class="stat-label">CSR Impact Generated</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Compliance Success</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-impact-card">
-                    <img
-                        src="assets/hero-csr-field.jpg"
-                        alt="Children in a rural classroom representing community-focused CSR impact"
-                        class="hero-impact-image">
-                    <div class="hero-impact-note">
-                        <span>CSR field execution</span>
-                        <strong>Planning, monitoring and reporting for real community outcomes</strong>
-                    </div>
+
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="group inline-flex items-center justify-center gap-3 bg-white text-[#0F172A] px-10 py-4 rounded-3xl font-semibold text-lg hover:bg-[#F97316] hover:text-white transition-all duration-300">
+                        Start Your CSR Program
+                        <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+                    </a>
+                    <a href="#impact" class="inline-flex items-center justify-center gap-3 border border-white/40 hover:bg-white/10 px-10 py-4 rounded-3xl font-semibold text-lg transition-all">
+                        See Real Impact
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="hero-wave">
-            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,60 C300,100 900,20 1200,60 L1200,120 L0,120 Z" fill="rgba(79, 179, 217, 0.1)"/>
-            </svg>
+
+        <div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-xs tracking-[3px] text-white/50">
+            <span>SCROLL TO EXPLORE</span>
+            <i class="fa-solid fa-chevron-down animate-bounce"></i>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>CSR Support Across the Full Program Cycle</h2>
-                <p>From strategy and compliance to field execution, monitoring, reporting, and stakeholder communication.</p>
+    <!-- Trust Bar -->
+    <div class="bg-white border-b py-6">
+        <div class="max-w-screen-2xl mx-auto px-8 flex flex-wrap justify-center items-center gap-x-16 gap-y-6 text-sm text-[#64748B]">
+            <div class="flex items-center gap-x-3">
+                <i class="fa-solid fa-check-circle text-[#0F766E] text-xl"></i>
+                <span class="font-medium">50+ Companies Transformed</span>
+            </div>
+            <div class="flex items-center gap-x-3">
+                <i class="fa-solid fa-check-circle text-[#0F766E] text-xl"></i>
+                <span class="font-medium">₹10Cr+ CSR Impact Delivered</span>
+            </div>
+            <div class="flex items-center gap-x-3">
+                <i class="fa-solid fa-check-circle text-[#0F766E] text-xl"></i>
+                <span class="font-medium">100% Compliance Success</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section id="services" class="max-w-screen-2xl mx-auto px-8 py-24">
+        <div class="text-center mb-16">
+            <div class="text-[#0F766E] font-semibold tracking-[3px] text-sm mb-4">WHAT WE DO</div>
+            <h2 class="section-header font-bold tracking-tight">End-to-end CSR<br>that delivers results</h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="service-card bg-white p-10 rounded-3xl border group">
+                <div class="w-14 h-14 bg-[#0F766E] text-white rounded-2xl flex items-center justify-center mb-8">
+                    <i class="fa-solid fa-chart-line text-3xl"></i>
+                </div>
+                <h3 class="text-3xl font-semibold mb-4">CSR Strategy & Compliance</h3>
+                <p class="text-[#64748B] leading-relaxed">Shape compliant, board-approved CSR strategies aligned with real community needs.</p>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <circle cx="20" cy="20" r="18" stroke="#0059c9" stroke-width="2"/>
-                            <path d="M15 20l5 5 10-10" stroke="#0059c9" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>CSR Strategy & Compliance</h3>
-                    <p>Shape CSR priorities, annual action plans, partner alignment, and reporting readiness around clear statutory and board expectations.</p>
+            <div class="service-card bg-white p-10 rounded-3xl border group">
+                <div class="w-14 h-14 bg-[#0F766E] text-white rounded-2xl flex items-center justify-center mb-8">
+                    <i class="fa-solid fa-hands-helping text-3xl"></i>
                 </div>
+                <h3 class="text-3xl font-semibold mb-4">Field Implementation</h3>
+                <p class="text-[#64748B] leading-relaxed">On-ground execution with verified partners across health, education & livelihoods.</p>
+            </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <rect x="5" y="5" width="30" height="30" rx="3" stroke="#0059c9" stroke-width="2"/>
-                            <path d="M15 18l5 5 10-10" stroke="#0059c9" stroke-width="2" stroke-linecap="round"/>
-                        </svg>
-                    </div>
-                    <h3>Program Design & Budgeting</h3>
-                    <p>Design practical CSR initiatives across health, education, livelihoods, sustainability, and community development with measurable outputs.</p>
+            <div class="service-card bg-white p-10 rounded-3xl border group">
+                <div class="w-14 h-14 bg-[#0F766E] text-white rounded-2xl flex items-center justify-center mb-8">
+                    <i class="fa-solid fa-chart-bar text-3xl"></i>
                 </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M20 5 L25 15 L35 15 L27.5 22.5 L30 32.5 L20 27.5 L10 32.5 L12.5 22.5 L5 15 L15 15 Z" stroke="#0059c9" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Field Implementation Support</h3>
-                    <p>Coordinate execution partners, milestones, beneficiary workflows, and ground-level reviews so plans become credible community outcomes.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <circle cx="20" cy="12" r="7" stroke="#0059c9" stroke-width="2"/>
-                            <path d="M8 32c0-8 5.5-12 12-12s12 4 12 12" stroke="#0059c9" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Monitoring & Impact Reporting</h3>
-                    <p>Track progress, verify field evidence, and convert implementation data into concise reports for leadership, boards, and CSR committees.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M5 15 L20 5 L35 15 L35 25 L20 35 L5 25 Z" stroke="#0059c9" stroke-width="2"/>
-                            <circle cx="20" cy="20" r="5" stroke="#0059c9" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Stakeholder Communication</h3>
-                    <p>Prepare clear updates, case stories, and partner communication that explain what changed, who benefited, and why the work matters.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                            <path d="M8 30h24M8 25h16M8 20h20M8 15h12" stroke="#0059c9" stroke-width="2" stroke-linecap="round"/>
-                            <rect x="5" y="10" width="30" height="25" rx="2" stroke="#0059c9" stroke-width="2"/>
-                        </svg>
-                    </div>
-                    <h3>Practical Reporting Systems</h3>
-                    <p>Use simple dashboards, documentation flows, and communication tools where they strengthen monitoring, reporting, and coordination.</p>
-                </div>
+                <h3 class="text-3xl font-semibold mb-4">Impact Measurement & Reporting</h3>
+                <p class="text-[#64748B] leading-relaxed">Robust monitoring and transparent reporting that satisfies boards and communities.</p>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Built for CSR Work That Has to Hold Up in the Field</h2>
-                    <p>Causewave Innovations LLP combines CSR advisory, public-health leadership, and implementation discipline to help companies move from obligation to credible community outcomes. Technology is used where it improves monitoring, reporting, coordination, and communication.</p>
-
-                    <div class="about-points">
-                        <div class="point">
-                            <span class="point-icon">✓</span>
-                            <span>CSR strategy aligned to compliance, board expectations, and real program delivery</span>
-                        </div>
-                        <div class="point">
-                            <span class="point-icon">✓</span>
-                            <span>Field-informed planning across health, education, livelihoods, sustainability, and community development</span>
-                        </div>
-                        <div class="point">
-                            <span class="point-icon">✓</span>
-                            <span>Monitoring and evidence systems that make progress reviewable</span>
-                        </div>
-                        <div class="point">
-                            <span class="point-icon">✓</span>
-                            <span>Clear impact communication for companies, partners, and communities</span>
-                        </div>
-                    </div>
-
-                    <a href="#contact" class="btn btn-primary">Partner With Us</a>
+    <!-- Impact -->
+    <section id="impact" class="bg-[#0F172A] text-white py-24">
+        <div class="max-w-screen-2xl mx-auto px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <div class="text-[#F97316] text-sm tracking-[3px] mb-4">PROVEN RESULTS</div>
+                    <h2 class="section-header font-bold tracking-tight mb-8">Real change.<br>Real numbers.</h2>
                 </div>
 
-                <div class="about-visual">
-                    <div class="impact-circles">
-                        <div class="circle circle-1">
-                            <span>CSR Strategy</span>
-                        </div>
-                        <div class="circle circle-2">
-                            <span>Field Execution</span>
-                        </div>
-                        <div class="circle circle-3">
-                            <span>Impact Reporting</span>
-                        </div>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                    <div class="bg-white/5 p-8 rounded-3xl">
+                        <div class="text-6xl font-bold text-[#F97316] mb-3">50+</div>
+                        <div class="text-white/80">Companies<br>Transformed</div>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-3xl">
+                        <div class="text-6xl font-bold text-[#F97316] mb-3">₹10Cr+</div>
+                        <div class="text-white/80">CSR Funds<br>Deployed</div>
+                    </div>
+                    <div class="bg-white/5 p-8 rounded-3xl">
+                        <div class="text-6xl font-bold text-[#F97316] mb-3">100%</div>
+                        <div class="text-white/80">Compliance<br>Rate</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>Ready to Plan a Credible CSR Program?</h2>
-                    <p>Tell us what your company wants to support. We can help shape a compliant, measurable CSR plan with practical implementation, monitoring, reporting, and communication support.</p>
+    <!-- Contact -->
+    <section id="contact" class="max-w-screen-2xl mx-auto px-8 py-24">
+        <div class="max-w-2xl mx-auto text-center">
+            <h2 class="section-header font-bold tracking-tight mb-6">Ready to build<br>meaningful CSR?</h2>
+            <p class="text-xl text-[#64748B] mb-12">Let’s design a program that your company, board, and communities can be proud of.</p>
 
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="contact-icon">📍</span>
-                            <div>
-                                <h4>Office</h4>
-                                <p>India</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <div>
-                                <h4>Email</h4>
-                                <p>info@causewaveinnovations.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-item">
-                            <span class="contact-icon">📞</span>
-                            <div>
-                                <h4>Phone</h4>
-                                <p>+91 76005 96053</p>
-                            </div>
-                        </div>
-                    </div>
+            <form class="space-y-6 text-left max-w-lg mx-auto" onsubmit="handleSubmit(event)">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <input type="text" placeholder="Your Name" class="w-full px-6 py-4 rounded-2xl border focus:outline-none focus:border-[#0F766E]" required>
+                    <input type="email" placeholder="Work Email" class="w-full px-6 py-4 rounded-2xl border focus:outline-none focus:border-[#0F766E]" required>
                 </div>
-
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" id="company" name="company" placeholder="Company Name">
-                        </div>
-
-                        <div class="form-group">
-                            <select id="service" name="service">
-                                <option value="">Select Service Interest</option>
-                                <option value="strategy">CSR Strategy & Planning</option>
-                                <option value="implementation">Program Implementation</option>
-                                <option value="compliance">Compliance & Reporting</option>
-                                <option value="engagement">Stakeholder Engagement</option>
-                                <option value="measurement">Impact Measurement</option>
-                                <option value="sustainability">Sustainability Programs</option>
-                                <option value="reporting-systems">Reporting Systems</option>
-                                <option value="communication">CSR Communication</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Tell us about your CSR goals and challenges" rows="4"></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-                    </form>
-                </div>
-            </div>
+                <input type="text" placeholder="Company Name" class="w-full px-6 py-4 rounded-2xl border focus:outline-none focus:border-[#0F766E]">
+                <textarea placeholder="Tell us about your CSR goals" rows="5" class="w-full px-6 py-4 rounded-2xl border focus:outline-none focus:border-[#0F766E]"></textarea>
+                
+                <button type="submit" class="w-full py-4 bg-[#0F766E] hover:bg-[#134E4B] text-white rounded-3xl font-semibold text-lg transition-all">
+                    Send Message
+                </button>
+            </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo-placeholder">
-                        <span class="logo-text">Causewave Innovations LLP</span>
-                    </div>
-                    <p>Creating waves of positive change through strategic corporate social responsibility.</p>
-                </div>
-
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#services">CSR Strategy</a></li>
-                            <li><a href="#services">Program Implementation</a></li>
-                            <li><a href="#services">Compliance & Reporting</a></li>
-                            <li><a href="#services">Impact Measurement</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="founder.html">Leadership</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Connect</h4>
-                        <ul>
-                            <li><a href="#">LinkedIn</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Newsletter</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 Causewave Innovations LLP. All rights reserved.</p>
-            </div>
+    <footer class="bg-[#0F172A] text-white/70 py-12">
+        <div class="max-w-screen-2xl mx-auto px-8 text-center text-sm">
+            © 2026 Causewave Innovations LLP. All rights reserved.
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            const originalText = btn.innerHTML;
+            btn.innerHTML = 'Thank you! We\'ll reply within 24 hours.';
+            btn.style.background = '#16a34a';
+            setTimeout(() => {
+                btn.innerHTML = originalText;
+                btn.style.background = '#0F766E';
+                e.target.reset();
+            }, 2800);
+        }
+    </script>
 </body>
 </html>
