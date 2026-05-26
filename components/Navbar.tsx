@@ -10,15 +10,15 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 glass border-b border-white/80">
-      <div className="max-w-screen-2xl mx-auto px-8 flex items-center justify-between h-20">
+      <div className="max-w-screen-2xl mx-auto px-6 md:px-8 flex items-center justify-between h-[76px] md:h-20">
         <div className="flex items-center gap-x-4">
-          <Link href="/" className="flex items-center gap-x-3">
-            <div className="relative w-[140px] h-[52px] flex items-center">
+          <Link href="/" className="flex items-center">
+            <div className="relative h-[52px] w-[160px] md:h-[58px] md:w-[180px] flex items-center">
               <Image 
                 src="/logo_1.png" 
                 alt="Causewave Innovations LLP" 
-                width={140} 
-                height={52}
+                width={180} 
+                height={58}
                 className="object-contain"
                 priority
               />
